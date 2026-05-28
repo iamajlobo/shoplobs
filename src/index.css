@@ -3,3 +3,8 @@
 @theme {
   --color-indigo:#4B0082;
 }
+
+.hero-bg {
+  background-image: url(./assets/images/shoplobs.png);
+}
+
