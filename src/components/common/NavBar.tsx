@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
-    const user = null;
+    const user = true;
     const activeLink = ({isActive} : {isActive: boolean}) => isActive ? 'border-b-2 border-orange-500 text-orange-500 py-2':'py-2';
 
     const mobileLink = ({isActive} : {isActive: boolean}) => isActive ? 'border-l-2 border-orange-500 bg-orange-500/10 text-orange-500 pl-2 py-2':'pl-2  py-2';
@@ -17,8 +17,8 @@ const NavBar = () => {
     }, [open]);
 
     return (
-        <header className="container mx-auto px-5 md:px-10 py-5 bg-white border-b border-gray-200 sticky top-0 z-100">
-            <div className="flex justify-between items-center mb-0 md:mb-5">
+        <header className=" py-5 bg-white border-b border-gray-200 sticky top-0 z-100">
+            <div className="container mx-auto px-5 md:px-10 flex justify-between items-center mb-0 md:mb-5">
                 <h1 className="font-bold text-2xl">Shop 
                     <span className="text-orange-500">
                         lobs
