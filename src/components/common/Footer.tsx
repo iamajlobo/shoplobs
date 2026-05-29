@@ -11,8 +11,8 @@ const Footer = () => {
                             lobs
                         </span>
                     </h1>
-                    <p className="text-sm md:pr-40 mb-3">
-                        You one-stop shop for quality products at the best prices.
+                    <p className="text-sm md:pr-40 mb-3 leading-7">
+                        Your one-stop shop for high-quality products at the best prices, all in one convenient place.
                     </p>
                 </div>
                 <div className="text-sm mb-3">
