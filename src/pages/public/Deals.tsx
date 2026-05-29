@@ -35,7 +35,7 @@ const Deals = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols sm:grid-cols-3 lg:grid-cols-4 gap-4">
           <ShopCard img={electronics} productName="Wireless Headphone" price={10.56} ratings={4} />
           <ShopCard img={clothes} productName="Red Hoody" price={200.56} ratings={3} />
           <ShopCard img={sofa} productName="Modern Sofa" price={2034.56} ratings={4} />
@@ -71,7 +71,7 @@ const Deals = () => {
           More Discounts
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols sm:grid-cols-3 lg:grid-cols-4 gap-4">
           <ShopCard img={electronics} productName="Wireless Headphone" price={10.56} ratings={4} />
           <ShopCard img={clothes} productName="Red Hoody" price={200.56} ratings={3} />
           <ShopCard img={sofa} productName="Modern Sofa" price={2034.56} ratings={4} />

@@ -60,12 +60,12 @@ const NavBar = () => {
             </div>
             <div className="hidden md:block text-center font-medium">
                 <nav className="space-x-10">
-                    <NavLink className={activeLink} to='/'>Home</NavLink>
-                    <NavLink className={activeLink} to='/shop'>Shop</NavLink>
-                    <NavLink className={activeLink} to='/categories'>Categories</NavLink>
-                    <NavLink className={activeLink} to='/deals'>Deals</NavLink>
-                    <NavLink className={activeLink} to='/about'>About Us</NavLink>
-                    <NavLink className={activeLink} to='/contact'>Contact</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/'>Home</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/shop'>Shop</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/categories'>Categories</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/deals'>Deals</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/about'>About Us</NavLink>
+                    <NavLink onClick={()=> scrollTo(0,0)} className={activeLink} to='/contact'>Contact</NavLink>
                 </nav>
             </div>
             
@@ -101,18 +101,18 @@ const NavBar = () => {
                 </div>
                 <div className="font-medium">
                     <nav className="flex flex-col">
-                        <NavLink className={mobileLink} to='/' onClick={() => setOpen(false)}>Home</NavLink>
-                        <NavLink className={mobileLink} to='/shop' onClick={() => setOpen(false)}>Shop</NavLink>
-                        <NavLink className={mobileLink} to='/categories' onClick={() => setOpen(false)}>Categories</NavLink>
-                        <NavLink className={mobileLink} to='/deals' onClick={() => setOpen(false)}>Deals</NavLink>
-                        <NavLink className={mobileLink} to='/about' onClick={() => setOpen(false)}>About Us</NavLink>
-                        <NavLink className={mobileLink} to='/contact' onClick={() => setOpen(false)}>Contact</NavLink>
+                        <NavLink className={mobileLink} to='/' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>Home</NavLink>
+                        <NavLink className={mobileLink} to='/shop' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>Shop</NavLink>
+                        <NavLink className={mobileLink} to='/categories' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>Categories</NavLink>
+                        <NavLink className={mobileLink} to='/deals' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>Deals</NavLink>
+                        <NavLink className={mobileLink} to='/about' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>About Us</NavLink>
+                        <NavLink className={mobileLink} to='/contact' onClick={() =>{ setOpen(false);  scrollTo(0,0)}}>Contact</NavLink>
                     </nav>
                 </div>
-                <div className="mx-2 mt-5 flex flex-col gap-3">
+                {/* <div className="mx-2 mt-5 flex flex-col gap-3">
                     <NavLink className='border-2 text-center py-2 rounded' to='/login' onClick={() => setOpen(false)}>Login</NavLink>
                     <NavLink className='border-2 border-orange-500 bg-orange-500 text-white text-center py-2 rounded' to='/register' onClick={() => setOpen(false)}>Sign Up</NavLink>
-                </div>
+                </div> */}
             </div>    
         </header>
     );

@@ -28,7 +28,7 @@ const Shop = () => {
           </label>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
           <ShopCard img={electronics} productName="Wireless Headphone" price={10.56} ratings={4} />
           <ShopCard img={clothes} productName="Red Hoody" price={200.56} ratings={3} />
           <ShopCard img={sofa} productName="Modern Sofa" price={2034.56} ratings={4} />
